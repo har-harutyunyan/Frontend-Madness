@@ -1,0 +1,126 @@
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 0;
+  background-color: rgb(174, 218, 235);
+  box-sizing: border-box;
+}
+
+.add-todo-form {
+  display: flex;  
+  flex-direction: row;    
+  gap: 0.5rem;              
+  margin-top: 2rem;    
+  width: 70%;          
+  padding: 0 1rem;      
+  box-sizing: border-box;
+}
+
+.add-todo-form input {
+  flex: 1;                 
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 2px solid #0a8adf;
+  outline: none;
+  border-radius: 5px 0 0 5px; 
+}
+
+.add-todo-form input:focus {
+  border-color: #340bea;
+}
+
+.add-todo-form button {
+  padding: 0.5rem 1rem;
+  background-color: #0d62e1;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.add-todo-form button:hover {
+  background-color: #064b90;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-list {
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  margin-top: 1rem;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0.5rem;
+  background-color: #0eb9d3;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.todo-item.completed h3 {
+  text-decoration: line-through;
+  color: #0837cf;
+}
+
+.todo-item h3 {
+  margin: 0;
+  font-size: 0.95rem;  
+  flex: 1;             
+}
+
+.todo-item .button-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.todo-item button {
+  padding: 0.25rem 0.5rem;  
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background-color 0.3s;
+}
+
+.todo-item button.delete-btn {
+  background-color: #030d8f;
+  color: white;
+  margin-right: 1px;
+}
+
+.todo-item button.delete-btn:hover {
+  background-color: #1448d5;
+}
+
+.todo-item button.complete-btn {
+  background-color: #030d8f;
+  color: white;
+  margin-left: 1px;
+}
+
+.todo-item button.complete-btn:hover {
+  background-color: #1448d5;
+}
+
+
